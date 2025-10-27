@@ -1,0 +1,268 @@
+/* Bible App Styles */
+
+.bible-app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+}
+
+/* Toolbar */
+.bible-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  flex-wrap: wrap;
+}
+
+.bible-book-select,
+.bible-chapter-select {
+  padding: 5px 10px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  background: var(--background-primary);
+  color: var(--text-normal);
+  cursor: pointer;
+}
+
+.bible-view-modes {
+  display: flex;
+  gap: 5px;
+  margin-left: auto;
+}
+
+.bible-view-modes button {
+  padding: 5px 15px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  background: var(--background-primary);
+  color: var(--text-normal);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.bible-view-modes button.active {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-color: var(--interactive-accent);
+}
+
+.bible-nav-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.bible-nav-buttons button {
+  padding: 5px 15px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  background: var(--background-primary);
+  color: var(--text-normal);
+  cursor: pointer;
+}
+
+.bible-nav-buttons button:hover {
+  background: var(--background-modifier-hover);
+}
+
+/* Main layout */
+.bible-main-area {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.bible-left-panel,
+.bible-right-panel {
+  border-right: 1px solid var(--background-modifier-border);
+  overflow-y: auto;
+  padding: 15px;
+}
+
+.bible-right-panel {
+  border-right: none;
+  border-left: 1px solid var(--background-modifier-border);
+}
+
+.bible-center-panel {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+/* Chapter display */
+.bible-chapter-header {
+  margin-bottom: 20px;
+}
+
+.bible-chapter-header h2 {
+  font-size: 2em;
+  margin: 0;
+  color: var(--text-normal);
+}
+
+/* Verses */
+.bible-verses-container {
+  line-height: 1.8;
+  font-size: 1.1em;
+}
+
+.bible-verse {
+  display: inline;
+  margin-right: 5px;
+  cursor: pointer;
+  padding: 2px 0;
+}
+
+.bible-verse:hover {
+  background: var(--background-modifier-hover);
+}
+
+.bible-verse-number {
+  font-weight: bold;
+  color: var(--text-muted);
+  margin-right: 5px;
+  font-size: 0.9em;
+  vertical-align: super;
+}
+
+.bible-verse-text {
+  color: var(--text-normal);
+}
+
+/* Entity highlighting */
+.bible-entity-person {
+  color: #4A90E2;
+  border-bottom: 1px dotted #4A90E2;
+}
+
+.bible-entity-place {
+  color: #50C878;
+  border-bottom: 1px dotted #50C878;
+}
+
+.bible-entity-topic {
+  color: #9B59B6;
+  border-bottom: 1px dotted #9B59B6;
+}
+
+.bible-entity-event {
+  color: #FF9500;
+  border-bottom: 1px dotted #FF9500;
+}
+
+.bible-entity-lexicon {
+  color: #FFD700;
+  border-bottom: 1px dotted #FFD700;
+}
+
+/* Panel content */
+.bible-panel-content {
+  margin-top: 15px;
+}
+
+.bible-panel-hint {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.bible-commentary {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: var(--background-secondary);
+  border-radius: 4px;
+}
+
+.bible-commentary h4 {
+  margin: 0 0 10px 0;
+  color: var(--text-accent);
+}
+
+.bible-commentary p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* AI Panel */
+.bible-ai-input {
+  margin-bottom: 15px;
+}
+
+.bible-ai-textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  background: var(--background-primary);
+  color: var(--text-normal);
+  resize: vertical;
+  font-family: inherit;
+  margin-bottom: 10px;
+}
+
+.bible-ai-send {
+  padding: 8px 20px;
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.bible-ai-send:hover {
+  background: var(--interactive-accent-hover);
+}
+
+.bible-ai-response {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.bible-ai-message {
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.bible-ai-message.user {
+  background: var(--background-secondary);
+  margin-left: 20px;
+}
+
+.bible-ai-message.assistant {
+  background: var(--background-primary-alt);
+  margin-right: 20px;
+  border-left: 3px solid var(--interactive-accent);
+}
+
+.bible-ai-message p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Tooltips */
+.bible-tooltip {
+  position: absolute;
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  padding: 10px;
+  max-width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  font-size: 0.9em;
+}
+
+.bible-tooltip h4 {
+  margin: 0 0 5px 0;
+  font-size: 1em;
+}
+
+.bible-tooltip p {
+  margin: 0;
+  line-height: 1.4;
+}

@@ -1,0 +1,10 @@
+{
+  "id": "obsidian-bible-app",
+  "name": "Bible Study App",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Comprehensive Bible study application with SQL database integration, AI assistance, and visual navigation",
+  "author": "Your Name",
+  "authorUrl": "https://github.com/yourusername/obsidian-bible-app",
+  "isDesktopOnly": false
+}
