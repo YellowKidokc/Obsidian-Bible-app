@@ -1,0 +1,23 @@
+{
+  "default": {
+    "people": "#4A90E2",
+    "places": "#50C878",
+    "topics": "#9B59B6",
+    "events": "#FF9500",
+    "lexicon": "#FFD700"
+  },
+  "dark": {
+    "people": "#5DADE2",
+    "places": "#58D68D",
+    "topics": "#AF7AC5",
+    "events": "#F39C12",
+    "lexicon": "#F4D03F"
+  },
+  "light": {
+    "people": "#2471A3",
+    "places": "#27AE60",
+    "topics": "#7D3C98",
+    "events": "#D68910",
+    "lexicon": "#D4AC0D"
+  }
+}
